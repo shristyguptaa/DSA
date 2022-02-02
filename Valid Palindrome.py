@@ -1,6 +1,16 @@
 # Valid Palindrome
 s = "A man, a plan, a canal: Panama"
 
+# Naive Solution
+st = ""
+for ch in s:
+    if ch.isalnum():
+        st+=(ch.lower())
+if st[::-1] == st:
+    print (True)
+else:
+    print (False)
+    
 # For Loop
 st = ""
 for ch in s:
