@@ -2,7 +2,7 @@
 nums = [10,2]
 
 def greaterOrEqual(self, digit, max_digit):
-    print (int(str(digit) + str(max_digit)) >= int(str(max_digit) + str(digit)))
+    return int(str(digit) + str(max_digit)) >= int(str(max_digit) + str(digit))
 
 ans = ''
 while nums != []:
