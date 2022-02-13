@@ -1,9 +1,8 @@
 # Largest Number
-nums = [10,2]
-
 def greaterOrEqual(self, digit, max_digit):
     return int(str(digit) + str(max_digit)) >= int(str(max_digit) + str(digit))
 
+nums = [10,2]
 ans = ''
 while nums != []:
     maxDigit = 0
@@ -12,4 +11,4 @@ while nums != []:
             maxDigit = num
     ans += str(maxDigit)
     nums.remove(maxDigit)
-print (0) if ans[0]=='0' else ans
+print ('0' if ans[0]=='0' else ans)
